@@ -13,5 +13,8 @@ public class InputController : MonoBehaviour
     {
         playerInput.x = Input.GetAxisRaw("Horizontal");
         playerInput.y = Input.GetAxisRaw("Vertical"); 
+
+        //Disabling diagonal movement
+        if(playerInput.x != 0) playerInput.y = 0;
     }
 }
