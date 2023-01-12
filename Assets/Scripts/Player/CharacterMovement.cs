@@ -37,7 +37,7 @@ public class CharacterMovement : MonoBehaviour
             StartCoroutine(Move(targetPosition));
         }
 
-
+        characterAnimations.SetCharacterMovement(isMoving);
     }
 
     IEnumerator Move(Vector3 targetPos)

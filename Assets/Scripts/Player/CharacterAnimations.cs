@@ -17,4 +17,9 @@ public class CharacterAnimations : MonoBehaviour, IAnimated
         animator.SetFloat("moveX", x);
         animator.SetFloat("moveY", y);
     }
+
+    public void SetCharacterMovement(bool isMoving)
+    {
+        animator.SetBool("isMoving", isMoving);
+    }
 }
