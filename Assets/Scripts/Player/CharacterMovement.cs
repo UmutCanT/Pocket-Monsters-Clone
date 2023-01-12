@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     private IAnimated characterAnimations;
 
     [SerializeField] float movementSpeed = 5f;
+    [SerializeField] LayerMask layerMask;
     private bool isMoving;
 
     private void Awake()
@@ -17,12 +18,7 @@ public class CharacterMovement : MonoBehaviour
         movementController = GetComponent<ICanMove>();
         characterAnimations = GetComponent<IAnimated>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -33,8 +29,9 @@ public class CharacterMovement : MonoBehaviour
             var targetPosition = transform.position;
             targetPosition.x += movementController.MovementInput.x;
             targetPosition.y += movementController.MovementInput.y;
-
-            StartCoroutine(Move(targetPosition));
+            
+            if (CanWalkOntheTile(targetPosition))
+                StartCoroutine(Move(targetPosition));
         }
 
         characterAnimations.SetCharacterMovement(isMoving);
@@ -52,5 +49,12 @@ public class CharacterMovement : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+    }
+
+    private bool CanWalkOntheTile(Vector2 targetPos)
+    {
+        if (Physics2D.OverlapCircle(targetPos, 0.01f, layerMask))
+            return false;
+        return true;
     }
 }
