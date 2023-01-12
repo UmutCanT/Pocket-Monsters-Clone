@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[RequireComponent(typeof(InputController))]
+[RequireComponent(typeof(ICanMove))]
 public class CharacterMovement : MonoBehaviour
 {
-    private InputController inputController;
+    private ICanMove movementController;
     private IAnimated characterAnimations;
 
     [SerializeField] float movementSpeed = 5f;
@@ -14,7 +14,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void Awake()
     {
-        inputController = GetComponent<InputController>();
+        movementController = GetComponent<ICanMove>();
         characterAnimations = GetComponent<IAnimated>();
     }
     // Start is called before the first frame update
@@ -26,13 +26,13 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isMoving && inputController.PlayerInput != Vector2.zero)
+        if (!isMoving && movementController.MovementInput != Vector2.zero)
         {
-            characterAnimations.SetDirectionForCharacter(inputController.PlayerInput.x, inputController.PlayerInput.y);
+            characterAnimations.SetDirectionForCharacter(movementController.MovementInput.x, movementController.MovementInput.y);
 
             var targetPosition = transform.position;
-            targetPosition.x += inputController.PlayerInput.x;
-            targetPosition.y += inputController.PlayerInput.y;
+            targetPosition.x += movementController.MovementInput.x;
+            targetPosition.y += movementController.MovementInput.y;
 
             StartCoroutine(Move(targetPosition));
         }
