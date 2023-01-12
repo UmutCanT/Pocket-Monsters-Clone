@@ -7,6 +7,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     private InputController inputController;
+    private IAnimated characterAnimations;
 
     [SerializeField] float movementSpeed = 5f;
     private bool isMoving;
@@ -14,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         inputController = GetComponent<InputController>();
+        characterAnimations = GetComponent<IAnimated>();
     }
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,8 @@ public class CharacterMovement : MonoBehaviour
     {
         if (!isMoving && inputController.PlayerInput != Vector2.zero)
         {
+            characterAnimations.SetDirectionForCharacter(inputController.PlayerInput.x, inputController.PlayerInput.y);
+
             var targetPosition = transform.position;
             targetPosition.x += inputController.PlayerInput.x;
             targetPosition.y += inputController.PlayerInput.y;
