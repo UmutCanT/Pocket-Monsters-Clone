@@ -219,11 +219,11 @@ GameObject:
   - component: {fileID: 550620662}
   - component: {fileID: 550620661}
   - component: {fileID: 550620665}
-  - component: {fileID: 550620664}
-  - component: {fileID: 550620663}
+  - component: {fileID: 550620667}
+  - component: {fileID: 550620666}
   m_Layer: 6
   m_Name: SolidObjects
-  m_TagString: Untagged
+  m_TagString: NotWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,7 +798,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!66 &550620663
+--- !u!19719996 &550620665
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550620659}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!66 &550620666
 CompositeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -818,77 +834,79 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 550620665}
     m_ColliderPaths:
-    - - X: -30000000
-        Y: 48750000
-      - X: -30000000
-        Y: 49375000
-      - X: -32500000
-        Y: 50000000
-      - X: -39375000
-        Y: 50000000
-      - X: -40000000
-        Y: 48750000
-      - X: -50000000
-        Y: 45000000
-      - X: -50000000
-        Y: 44375000
-      - X: -52500000
-        Y: 44375000
-      - X: -55625000
-        Y: 43750000
-      - X: -59375000
-        Y: 41250000
-      - X: -59375000
-        Y: 40000000
-      - X: -60000000
-        Y: 40000000
-      - X: -60000000
+    - - X: -10623333
+        Y: 39997000
+      - X: -11248000
+        Y: 41871000
+      - X: -18123000
+        Y: 44371000
+      - X: -19997000
+        Y: 44371000
+      - X: -19997000
+        Y: 44996000
+      - X: -29996000
+        Y: 48745625
+      - X: -29996000
+        Y: 49371000
+      - X: -32496000
+        Y: 49996000
+      - X: -39371000
+        Y: 49996000
+      - X: -39996000
+        Y: 48746000
+      - X: -39996000
+        Y: 48745624
+      - X: -49994996
+        Y: 44996000
+      - X: -49994996
+        Y: 44371000
+      - X: -52494000
+        Y: 44371000
+      - X: -55619000
+        Y: 43746000
+      - X: -59369000
+        Y: 41246000
+      - X: -59369000
+        Y: 39997000
+      - X: -59994000
+        Y: 39997000
+      - X: -59994000
         Y: 10000000
-      - X: -70000000
+      - X: -69993000
         Y: 10000000
-      - X: -70000000
-        Y: -10000000
-      - X: -10000000
-        Y: -10000000
-      - X: -10000000
-        Y: 40000000
-      - X: -10625000
-        Y: 40000000
-      - X: -11250000
-        Y: 41875000
-      - X: -18125000
-        Y: 44375000
-      - X: -20000000
-        Y: 44375000
-      - X: -20000000
-        Y: 45000000
+      - X: -69993000
+        Y: -9999000
+      - X: -9998000
+        Y: -9999000
+      - X: -9998000
+        Y: 39997000
   m_CompositePaths:
     m_Paths:
-    - - {x: -1.0000293, y: -1}
-      - {x: -1.0000293, y: 4}
-      - {x: -1.0625066, y: 4.000019}
-      - {x: -1.125012, y: 4.1875043}
-      - {x: -1.8125044, y: 4.4375}
-      - {x: -2, y: 4.4375296}
-      - {x: -2.000018, y: 4.5000067}
-      - {x: -3, y: 4.875019}
-      - {x: -3.0000212, y: 4.9375052}
-      - {x: -3.2500029, y: 5}
-      - {x: -3.9375076, y: 4.999985}
-      - {x: -4.0000095, y: 4.8749967}
-      - {x: -5, y: 4.499981}
-      - {x: -5.0000296, y: 4.4375}
-      - {x: -5.2500024, y: 4.4374995}
-      - {x: -5.5625043, y: 4.374997}
-      - {x: -5.9375, y: 4.1249857}
-      - {x: -5.9375296, y: 4}
-      - {x: -6, y: 3.999971}
-      - {x: -6.0000296, y: 1}
-      - {x: -7, y: 0.99997073}
-      - {x: -6.9999704, y: -1}
+    - - {x: -0.9998293, y: -0.9999}
+      - {x: -0.9998293, y: 3.9997}
+      - {x: -1.0623398, y: 3.9997191}
+      - {x: -1.124812, y: 4.187104}
+      - {x: -1.8123044, y: 4.4371}
+      - {x: -1.9997001, y: 4.4371295}
+      - {x: -1.9997178, y: 4.499607}
+      - {x: -2.9996, y: 4.874582}
+      - {x: -2.9996212, y: 4.937105}
+      - {x: -3.2496028, y: 4.9996}
+      - {x: -3.9371076, y: 4.999585}
+      - {x: -3.9996097, y: 4.874559}
+      - {x: -4.9995, y: 4.499581}
+      - {x: -4.999529, y: 4.4371}
+      - {x: -5.2494025, y: 4.4370995}
+      - {x: -5.561904, y: 4.374597}
+      - {x: -5.9369, y: 4.1245856}
+      - {x: -5.9369297, y: 3.9997}
+      - {x: -5.9994, y: 3.9996707}
+      - {x: -5.9994297, y: 1}
+      - {x: -6.9993, y: 0.99997073}
+      - {x: -6.9992704, y: -0.9999}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!50 &550620664
+--- !u!50 &550620667
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -909,22 +927,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!19719996 &550620665
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550620659}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &1106475632
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,11 +937,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1106475634}
   - component: {fileID: 1106475633}
+  - component: {fileID: 1106475637}
   - component: {fileID: 1106475636}
   - component: {fileID: 1106475635}
-  - component: {fileID: 1106475637}
   - component: {fileID: 1106475638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,10 +1027,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d140a98ac5ec149bb93911163d58ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 64
+  tilePaths:
+    solidLayer:
+      serializedVersion: 2
+      m_Bits: 64
+  movementSpeed: 0.5
 --- !u!114 &1106475636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,7 +3454,7 @@ Grid:
   m_GameObject: {fileID: 1641274388}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellGap: {x: -0.0001, y: -0.0001, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &1641274390
