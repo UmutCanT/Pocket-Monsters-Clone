@@ -2,26 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="Pokemon", menuName ="Pokemon/Create new pokemon")]
-public class Pokemon : ScriptableObject
+public class Pokemon 
 {
-    //Pokedex Entries
-    [SerializeField] string pokemonName;
-    [SerializeField] int pokemonId;
-    [TextArea][SerializeField] string pokemonDescription;
-    [SerializeField] PokemonTypes typeOne;
-    [SerializeField] PokemonTypes typeTwo;
+    PokemonTemplate pokemonTemplate;
+    int level;
 
-    //Visuals
-    [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite;
-    [SerializeField] Sprite inGameSprite;
+    public Pokemon(PokemonTemplate pokemonTemplate, int level)
+    {
+        this.pokemonTemplate = pokemonTemplate;
+        this.level = level;
+    }
 
-    //Pokemon Stats
-    [SerializeField] int maxHealthPoint;
-    [SerializeField] int attack;
-    [SerializeField] int defence;
-    [SerializeField] int specialAttack;
-    [SerializeField] int specialDefence;
-    [SerializeField] int speed;
+    public int MaxHP { get { return Mathf.FloorToInt( (pokemonTemplate.MaxHealthPoint * level )/ 100f) + 10; } }
+    public int Attack { get { return Mathf.FloorToInt( (pokemonTemplate.Attack * level )/ 100f) + 5; } }
+    public int Defence { get { return Mathf.FloorToInt( (pokemonTemplate.Defence * level )/ 100f) + 5; } }
+    public int SpecialAtt { get { return Mathf.FloorToInt( (pokemonTemplate.SpecialAttack * level )/ 100f) + 5; } }
+    public int SpecialDef { get { return Mathf.FloorToInt( (pokemonTemplate.SpecialDefence * level )/ 100f) + 5; } }
+    public int Speed { get { return Mathf.FloorToInt( (pokemonTemplate.Speed * level )/ 100f) + 5; } }
+
 }
