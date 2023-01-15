@@ -1,0 +1,22 @@
+﻿public enum PokemonTypes
+{
+    None,
+    Normal,
+    Fire,
+    Water,
+    Grass,
+    Electric,
+    Flying,
+    Fighting,
+    Poison,
+    Ground,
+    Psychic,
+    Rock,
+    Ice,
+    Bug,
+    Dragon,
+    Ghost,
+    Dark,
+    Steel,
+    Fairy
+}

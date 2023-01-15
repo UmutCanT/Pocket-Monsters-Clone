@@ -37,6 +37,7 @@ public class CharacterMovement : MonoBehaviour
                 StartCoroutine(Move(targetPosition));
         }        
         characterAnimations.SetCharacterMovement(isMoving);
+
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -49,6 +50,7 @@ public class CharacterMovement : MonoBehaviour
         }
         transform.position = targetPos;
         isMoving = false;
+        tilePaths.LongGrassPath(targetPos);
     }
 
     private void OnDrawGizmos()
