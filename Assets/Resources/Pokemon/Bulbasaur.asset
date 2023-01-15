@@ -12,18 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6877a9c51b7636a428db3dae8ddf6a47, type: 3}
   m_Name: Bulbasaur
   m_EditorClassIdentifier: 
-  pokemonName: Bulbasaur
   pokemonId: 1
+  pokemonName: Bulbasaur
   pokemonDescription: "There is a plant seed on its back right from the day this
     Pok\xE9mon is born. The seed slowly grows larger."
   typeOne: 4
   typeTwo: 8
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: 2d2dd27a0b4c66349a3d7998a88c8553, type: 3}
+  backSprite: {fileID: 21300000, guid: c8be23f117758bc49b4bb6e5b6c3f120, type: 3}
   inGameSprite: {fileID: 0}
-  maxHealthPoint: 0
-  attack: 0
-  defence: 0
-  specialAttack: 0
-  specialDefence: 0
-  speed: 0
+  maxHealthPoint: 45
+  attack: 49
+  defence: 49
+  specialAttack: 65
+  specialDefence: 65
+  speed: 45
+  moveset:
+  - level: 1
+    move: {fileID: 11400000, guid: 0e02ee7180d822b44a6b63680f267f2e, type: 2}
+  - level: 7
+    move: {fileID: 11400000, guid: 76fbec7ecf03e0c4fa8229d43f063603, type: 2}
