@@ -6,8 +6,8 @@ using UnityEngine;
 public class PokemonTemplate : ScriptableObject
 {
     //Pokedex Entries
-    [SerializeField] string pokemonName;
     [SerializeField] int pokemonId;
+    [SerializeField] string pokemonName;
     [TextArea][SerializeField] string pokemonDescription;
     [SerializeField] PokemonTypes typeOne;
     [SerializeField] PokemonTypes typeTwo;
@@ -25,6 +25,8 @@ public class PokemonTemplate : ScriptableObject
     [SerializeField] int specialDefence;
     [SerializeField] int speed;
 
+    [SerializeField] List<LearnableMoveset> moveset;
+
     public string PokemonName { get => pokemonName; }
     public int PokemonId { get => pokemonId; }
     public string PokemonDescription { get => pokemonDescription; }
@@ -39,4 +41,5 @@ public class PokemonTemplate : ScriptableObject
     public int SpecialAttack { get => specialAttack; }
     public int SpecialDefence { get => specialDefence; }
     public int Speed { get => speed; }
+    public List<LearnableMoveset> Moveset { get => moveset; }
 }

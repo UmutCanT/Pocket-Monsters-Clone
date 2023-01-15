@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6877a9c51b7636a428db3dae8ddf6a47, type: 3}
   m_Name: Charmander
   m_EditorClassIdentifier: 
-  pokemonName: 
-  pokemonId: 0
+  pokemonId: 4
+  pokemonName: Charmander
   pokemonDescription: 
-  typeOne: 0
+  typeOne: 2
   typeTwo: 0
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: 9ac01c5f9f35a224a99ac4e326a1c01b, type: 3}
+  backSprite: {fileID: 21300000, guid: 94baef57ce8538545a576d7600697d37, type: 3}
   inGameSprite: {fileID: 0}
-  maxHealthPoint: 0
-  attack: 0
-  defence: 0
-  specialAttack: 0
-  specialDefence: 0
-  speed: 0
+  maxHealthPoint: 39
+  attack: 52
+  defence: 43
+  specialAttack: 60
+  specialDefence: 50
+  speed: 65
