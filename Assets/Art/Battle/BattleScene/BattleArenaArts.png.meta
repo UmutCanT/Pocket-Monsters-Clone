@@ -1,0 +1,1462 @@
+fileFormatVersion: 2
+guid: 97d95ab2f2c67834092ae93c2550d0fa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BattleArenaArts_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1719
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58b7d6a819283b488a21db18cbff89e
+      internalID: 1640323625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1720
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c54157048c95484497d2bd93503cdca
+      internalID: -855688397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_2
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1719
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30604d55acc6a7b48aefb5a0d1e043a5
+      internalID: -741803856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_3
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1759
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92855e821f1dc1747af7d822cc0d6401
+      internalID: -1464630437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_4
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1755
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb92a8307593246989e180b4b3439a
+      internalID: -170989612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_5
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1753
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a451797cc5b7eb40b5b0fb9d85942ba
+      internalID: 1976395493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_6
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1719
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85289540dfe66145a892f13fac6f0e0
+      internalID: -287239419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_7
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1715
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a185002d1cdb743ba61bf39457df4d
+      internalID: 942907786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_8
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 1713
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f77c42adbf9ea548aeb45068cd7e09a
+      internalID: 1406159873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1436
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7658e5db46952438888e32deba925c
+      internalID: -751075107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_27
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1434
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c987a2382f59d446847acf73f6a3053
+      internalID: -880830592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_28
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1434
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c465f760a4008428d9fa5c308a1f04
+      internalID: -1222238536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_29
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1476
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0f9168d6a1e964590ee9d216d2d315
+      internalID: -118931954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_30
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1475
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4575988abf18841bb294889d2e3372
+      internalID: 1383106336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_31
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1475
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d2a37119bccfe4e83684e98773964b
+      internalID: 736305689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_32
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1436
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd330a730f3766549a709288d643f4d0
+      internalID: 1300029551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_33
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1435
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e37b8286123d3a4e8a660cf5f92f3af
+      internalID: 1797550149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_34
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1435
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45e5650c98147040ab2a809724bb1ce
+      internalID: -897074758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_57
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1170
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0e7e6b7c5b7cf41b8a4bcb55b3f143
+      internalID: -1232547166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_58
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1170
+        width: 256
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e059e0f5e9c90f4b9ce3f93e64b7f3b
+      internalID: 1061007622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_59
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1168
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070156d856eeedf48b554e20bdfefff8
+      internalID: -806976882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_60
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1230
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbda3823a9037d48b08d58edd8a37bd
+      internalID: 191689723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_61
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1226
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85ea747f3dd5b94db87a5be50390e33
+      internalID: 421720888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_62
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1222
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd2c160dc10e754ba1eebe93914b329
+      internalID: -1802215322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_63
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1190
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e32db4e15801240b4ad17139c88e50
+      internalID: -1402933353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_64
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1186
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563ccf9733ef6374a9d058ec576cb1a2
+      internalID: -176425915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_65
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1182
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17600aff37b98b94ea07e00b03fcf92a
+      internalID: -954029752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_85
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 895
+        width: 256
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab51f7302d6793c41b18796d1b8fc47d
+      internalID: -977456532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_86
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 894
+        width: 256
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763554f5e0632b44ab9ccd072fb08159
+      internalID: 1825113597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_87
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 893
+        width: 256
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f55715112a57c14abe8843c76806a74
+      internalID: 1533035857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_88
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 962
+        width: 126
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc6e087bd18f4049bf39cce7cae601b
+      internalID: -1598455858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_89
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 951
+        width: 126
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da36266017588d04683f502a6af3669e
+      internalID: -1166617760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_90
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 953
+        width: 126
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ad5456f70c8bc42a17b4706870a542
+      internalID: -1975544750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 922
+        width: 152
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617bbda0d37e16f4b96d2226fa6fc205
+      internalID: -605348477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_92
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 911
+        width: 152
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e3fb573ec7c2441bb2e55114116372
+      internalID: -1397510134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_93
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 913
+        width: 152
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2158f0bedfcda80439fef949df658b68
+      internalID: -565156827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_114
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 625
+        width: 256
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526856af5430b3948b08fb57d70bf98b
+      internalID: -764959231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_115
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 624
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66528bfdf189e8b458b3121437e0b566
+      internalID: 512908651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_116
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 681
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22ea1719e14ee14ea1417282e69f952
+      internalID: -1400415778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_117
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 673
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc892ed54543dbe44bfac88250301454
+      internalID: -112206039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_118
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 665
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d142dffc0a9aaef4787ab3181e483221
+      internalID: 102638971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_119
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 641
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aba1d51f1c52c4e9f7422e419998ef
+      internalID: -908789815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_120
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 633
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f89ca3c911c38543bb53ba937dcd6f1
+      internalID: -1028644281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_121
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 625
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38a55b591882b84783e52621894fa86
+      internalID: -1767869350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_134
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 348
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04b2be94c4187e41831daf6fdf3c1b4
+      internalID: -977919750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_135
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 350
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cecc78a28120a4dab91a5cd12329f5
+      internalID: 1239291975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_136
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 348
+        width: 256
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42588d75d145d1a458fd1889913f1a9c
+      internalID: 890107241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_137
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 387
+        width: 124
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4368df4b93462d148aa955b8ccee92e8
+      internalID: 160995793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_138
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 382
+        width: 124
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06aa8e49159e51348b2f340e3ea1f576
+      internalID: 998491746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_139
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 347
+        width: 161
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511f1d32fdeb55649a946140f68c4a07
+      internalID: -59762372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_140
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 342
+        width: 161
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e657d86ee625e46827a3989198a17f
+      internalID: -135097485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleArenaArts_158
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 41
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f698993868da754c9d932270dc347ac
+      internalID: -670249671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BattleArenaArts_164: 75846598
+      BattleArenaArts_129: -1838510816
+      BattleArenaArts_94: -504488730
+      BattleArenaArts_14: 2114388896
+      BattleArenaArts_142: -1476535489
+      BattleArenaArts_116: -1400415778
+      BattleArenaArts_144: -1537852861
+      BattleArenaArts_174: 1736724278
+      BattleArenaArts_160: 1382081146
+      BattleArenaArts_99: -1882963965
+      BattleArenaArts_127: 953906038
+      BattleArenaArts_30: 1383106336
+      BattleArenaArts_153: -1368013645
+      BattleArenaArts_194: -1452113751
+      BattleArenaArts_52: -1250002402
+      BattleArenaArts_145: -257664159
+      BattleArenaArts_131: 1360305374
+      BattleArenaArts_88: -1598455858
+      BattleArenaArts_136: 890107241
+      BattleArenaArts_12: 1556793623
+      BattleArenaArts_108: -475954161
+      BattleArenaArts_179: -1265727050
+      BattleArenaArts_29: -118931954
+      BattleArenaArts_44: 2120511695
+      BattleArenaArts_181: 1550902904
+      BattleArenaArts_185: 272204418
+      BattleArenaArts_188: 1231979615
+      BattleArenaArts_193: 330417220
+      BattleArenaArts_71: -1203892867
+      BattleArenaArts_45: -251757620
+      BattleArenaArts_32: 1300029551
+      BattleArenaArts_40: 395974196
+      BattleArenaArts_56: -737126812
+      BattleArenaArts_162: 1343698027
+      BattleArenaArts_87: 1533035857
+      BattleArenaArts_66: -151424587
+      BattleArenaArts_100: 1195601555
+      BattleArenaArts_23: 47525457
+      BattleArenaArts_135: 1239291975
+      BattleArenaArts_91: -605348477
+      BattleArenaArts_38: 280677495
+      BattleArenaArts_149: 1095466882
+      BattleArenaArts_49: 1589529557
+      BattleArenaArts_42: 1372642943
+      BattleArenaArts_101: -946769373
+      BattleArenaArts_50: -1772914888
+      BattleArenaArts_114: -764959231
+      BattleArenaArts_102: -377167963
+      BattleArenaArts_26: -751075107
+      BattleArenaArts_113: 2012360442
+      BattleArenaArts_68: -776374464
+      BattleArenaArts_9: 512989711
+      BattleArenaArts_161: -2026995134
+      BattleArenaArts_22: -990589147
+      BattleArenaArts_126: -385930873
+      BattleArenaArts_133: 257619909
+      BattleArenaArts_34: -897074758
+      BattleArenaArts_165: -2023477765
+      BattleArenaArts_115: 512908651
+      BattleArenaArts_196: 20199996
+      BattleArenaArts_55: -1921485269
+      BattleArenaArts_120: -1028644281
+      BattleArenaArts_191: 1906289495
+      BattleArenaArts_18: -461248226
+      BattleArenaArts_154: -2137084344
+      BattleArenaArts_89: -1166617760
+      BattleArenaArts_83: -1679806575
+      BattleArenaArts_125: -1587554362
+      BattleArenaArts_4: -170989612
+      BattleArenaArts_6: -287239419
+      BattleArenaArts_172: -436650287
+      BattleArenaArts_43: 271988645
+      BattleArenaArts_25: 461391980
+      BattleArenaArts_163: -1524094765
+      BattleArenaArts_107: -404164867
+      BattleArenaArts_70: -1874996255
+      BattleArenaArts_167: -237847926
+      BattleArenaArts_33: 1797550149
+      BattleArenaArts_10: -2017234873
+      BattleArenaArts_81: -671819703
+      BattleArenaArts_166: 155315942
+      BattleArenaArts_175: -1417187522
+      BattleArenaArts_138: 998491746
+      BattleArenaArts_19: 112141364
+      BattleArenaArts_134: -977919750
+      BattleArenaArts_16: 1392685695
+      BattleArenaArts_28: -1222238536
+      BattleArenaArts_123: -1609689655
+      BattleArenaArts_21: -291534504
+      BattleArenaArts_92: -1397510134
+      BattleArenaArts_97: 1883086216
+      BattleArenaArts_67: 79582966
+      BattleArenaArts_106: -1593795958
+      BattleArenaArts_173: -1120703081
+      BattleArenaArts_63: -1402933353
+      BattleArenaArts_17: 353615964
+      BattleArenaArts_72: 796072308
+      BattleArenaArts_178: -723113804
+      BattleArenaArts_7: 942907786
+      BattleArenaArts_73: -2048796655
+      BattleArenaArts_159: -847889532
+      BattleArenaArts_48: 2043536836
+      BattleArenaArts_51: 1723685264
+      BattleArenaArts_177: 1841904908
+      BattleArenaArts_105: 1064494976
+      BattleArenaArts_36: 334250734
+      BattleArenaArts_109: 1718459621
+      BattleArenaArts_98: 1396695142
+      BattleArenaArts_64: -176425915
+      BattleArenaArts_35: -1328301316
+      BattleArenaArts_158: -670249671
+      BattleArenaArts_128: -798380922
+      BattleArenaArts_65: -954029752
+      BattleArenaArts_169: 1149722024
+      BattleArenaArts_195: -1751875623
+      BattleArenaArts_79: 905028410
+      BattleArenaArts_147: 1861278682
+      BattleArenaArts_198: -857481188
+      BattleArenaArts_0: 1640323625
+      BattleArenaArts_118: 102638971
+      BattleArenaArts_186: 1343218556
+      BattleArenaArts_183: 2133277097
+      BattleArenaArts_124: -561085578
+      BattleArenaArts_140: -135097485
+      BattleArenaArts_180: -1110602259
+      BattleArenaArts_122: -701744347
+      BattleArenaArts_155: -974813079
+      BattleArenaArts_121: -1767869350
+      BattleArenaArts_46: -688094552
+      BattleArenaArts_76: 1933043131
+      BattleArenaArts_117: -112206039
+      BattleArenaArts_111: -310569678
+      BattleArenaArts_132: -49094204
+      BattleArenaArts_130: 206716097
+      BattleArenaArts_104: -1834611872
+      BattleArenaArts_90: -1975544750
+      BattleArenaArts_62: -1802215322
+      BattleArenaArts_54: 1669068596
+      BattleArenaArts_96: 1833207559
+      BattleArenaArts_57: -1232547166
+      BattleArenaArts_53: 2082552369
+      BattleArenaArts_151: -354381623
+      BattleArenaArts_190: -337281363
+      BattleArenaArts_143: -1534076252
+      BattleArenaArts_171: 1811336972
+      BattleArenaArts_119: -908789815
+      BattleArenaArts_82: -1332966197
+      BattleArenaArts_1: -855688397
+      BattleArenaArts_58: 1061007622
+      BattleArenaArts_20: -123315252
+      BattleArenaArts_168: 1376404675
+      BattleArenaArts_189: 103497792
+      BattleArenaArts_157: 1559415470
+      BattleArenaArts_86: 1825113597
+      BattleArenaArts_24: -1845630792
+      BattleArenaArts_95: 1884681141
+      BattleArenaArts_112: -1883280211
+      BattleArenaArts_110: -2076290307
+      BattleArenaArts_41: -830201290
+      BattleArenaArts_5: 1976395493
+      BattleArenaArts_77: 850649066
+      BattleArenaArts_182: -407649171
+      BattleArenaArts_80: 712097240
+      BattleArenaArts_61: 421720888
+      BattleArenaArts_141: 701436666
+      BattleArenaArts_75: 1723678124
+      BattleArenaArts_8: 1406159873
+      BattleArenaArts_137: 160995793
+      BattleArenaArts_3: -1464630437
+      BattleArenaArts_150: -1704764306
+      BattleArenaArts_37: 1380350909
+      BattleArenaArts_93: -565156827
+      BattleArenaArts_176: -1866452051
+      BattleArenaArts_31: 736305689
+      BattleArenaArts_78: -999279385
+      BattleArenaArts_15: 1958509617
+      BattleArenaArts_192: 1864723664
+      BattleArenaArts_60: 191689723
+      BattleArenaArts_39: 1603360806
+      BattleArenaArts_59: -806976882
+      BattleArenaArts_84: -1397963265
+      BattleArenaArts_146: -1645202792
+      BattleArenaArts_11: -2030081759
+      BattleArenaArts_27: -880830592
+      BattleArenaArts_13: -716734592
+      BattleArenaArts_184: 452035505
+      BattleArenaArts_74: -2136904992
+      BattleArenaArts_152: -1031554478
+      BattleArenaArts_139: -59762372
+      BattleArenaArts_47: 1920555747
+      BattleArenaArts_85: -977456532
+      BattleArenaArts_156: 2120338400
+      BattleArenaArts_170: -100506183
+      BattleArenaArts_103: -607689230
+      BattleArenaArts_2: -741803856
+      BattleArenaArts_187: 1873131066
+      BattleArenaArts_148: -808524720
+      BattleArenaArts_69: -644803066
+      BattleArenaArts_197: -839061746
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

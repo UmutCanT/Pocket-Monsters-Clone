@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 88e823593ef2a7b428aa72452a086d26
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Truth And Ideals
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 073ba202fe0c8104ea75d1aea76bec0d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
