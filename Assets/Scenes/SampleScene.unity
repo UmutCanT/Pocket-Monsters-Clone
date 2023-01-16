@@ -2548,6 +2548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803500315}
+  - component: {fileID: 803500316}
   m_Layer: 0
   m_Name: PokemonInfoArea
   m_TagString: Untagged
@@ -2578,6 +2579,21 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: 0}
   m_SizeDelta: {x: 681.73, y: 126}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &803500316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803500314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonNameText: {fileID: 367429400}
+  pokemonLevelText: {fileID: 319424937}
+  pokemonGenderImage: {fileID: 1350015040}
 --- !u!1 &926546232
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,6 +3303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1197845067}
+  - component: {fileID: 1197845068}
   m_Layer: 0
   m_Name: PokemonInfoArea
   m_TagString: Untagged
@@ -3317,6 +3334,21 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: 681.73, y: 126}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1197845068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197845066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonNameText: {fileID: 1477399751}
+  pokemonLevelText: {fileID: 91205283}
+  pokemonGenderImage: {fileID: 1722703695}
 --- !u!1 &1198870092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3517,6 +3549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215545061}
   - component: {fileID: 1215545062}
+  - component: {fileID: 1215545063}
   m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
@@ -3597,7 +3630,33 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1215545063}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: SetCurrentHP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1215545063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215545060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 372
+  currentHP: 156
 --- !u!1 &1350015038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475976818}
   - component: {fileID: 1475976819}
+  - component: {fileID: 1475976820}
   m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
@@ -3763,7 +3823,33 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1475976820}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: SetCurrentHP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1475976820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475976817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 372
+  currentHP: 156
 --- !u!1 &1477399749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7143,7 +7229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 18.9, y: 13.5}
+  m_AnchoredPosition: {x: 18.899994, y: 13.5}
   m_SizeDelta: {x: 576.11, y: 20}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2033498426
