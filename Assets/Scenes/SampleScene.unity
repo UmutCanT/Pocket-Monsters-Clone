@@ -2415,7 +2415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0}
   m_SizeDelta: {x: 800, y: 250}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &782395104
@@ -2548,7 +2548,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803500315}
-  - component: {fileID: 803500316}
   m_Layer: 0
   m_Name: PokemonInfoArea
   m_TagString: Untagged
@@ -2579,21 +2578,6 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: 0}
   m_SizeDelta: {x: 681.73, y: 126}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &803500316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803500314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemonNameText: {fileID: 367429400}
-  pokemonLevelText: {fileID: 319424937}
-  pokemonGenderImage: {fileID: 1350015040}
 --- !u!1 &926546232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,7 +2613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0.667984}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0.667984}
   m_SizeDelta: {x: 1484.81, y: 278.41}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &926546234
@@ -3303,7 +3287,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1197845067}
-  - component: {fileID: 1197845068}
   m_Layer: 0
   m_Name: PokemonInfoArea
   m_TagString: Untagged
@@ -3334,21 +3317,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: 681.73, y: 126}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1197845068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197845066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemonNameText: {fileID: 1477399751}
-  pokemonLevelText: {fileID: 91205283}
-  pokemonGenderImage: {fileID: 1722703695}
 --- !u!1 &1198870092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,8 +3623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 372
-  currentHP: 156
 --- !u!1 &1350015038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,8 +3814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 372
-  currentHP: 156
 --- !u!1 &1477399749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,6 +6616,7 @@ GameObject:
   - component: {fileID: 1790551316}
   - component: {fileID: 1790551318}
   - component: {fileID: 1790551317}
+  - component: {fileID: 1790551319}
   m_Layer: 0
   m_Name: OpponentHud
   m_TagString: Untagged
@@ -6719,6 +6684,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790551315}
   m_CullTransparentMesh: 1
+--- !u!114 &1790551319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790551315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonNameText: {fileID: 367429400}
+  pokemonLevelText: {fileID: 319424937}
+  pokemonGenderImage: {fileID: 1350015040}
+  hpBar: {fileID: 1475976820}
 --- !u!1 &1825289995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6730,6 +6711,7 @@ GameObject:
   - component: {fileID: 1825289996}
   - component: {fileID: 1825289998}
   - component: {fileID: 1825289997}
+  - component: {fileID: 1825289999}
   m_Layer: 0
   m_Name: PlayerHud
   m_TagString: Untagged
@@ -6798,6 +6780,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825289995}
   m_CullTransparentMesh: 1
+--- !u!114 &1825289999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825289995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9227fabb0951c43b57f52a18b2793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonNameText: {fileID: 1477399751}
+  pokemonLevelText: {fileID: 91205283}
+  pokemonGenderImage: {fileID: 1722703695}
+  hpBar: {fileID: 1215545063}
 --- !u!1 &1852153598
 GameObject:
   m_ObjectHideFlags: 0

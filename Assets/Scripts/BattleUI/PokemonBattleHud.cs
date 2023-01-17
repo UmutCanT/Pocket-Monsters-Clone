@@ -13,7 +13,7 @@ public class PokemonBattleHud : MonoBehaviour
 
     readonly string levelTextTemplate = "Lv.{0}";
 
-    void UpdatePokemonBattleHud(Pokemon pokemon)
+    public void UpdatePokemonBattleHud(Pokemon pokemon)
     {
         pokemonNameText.text = pokemon.PokemonTemplate.PokemonName;
         pokemonLevelText.text = string.Format(levelTextTemplate, pokemon.CurrentLevel);

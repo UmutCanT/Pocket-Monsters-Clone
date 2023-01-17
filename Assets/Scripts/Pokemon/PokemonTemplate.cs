@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="Pokemon", menuName ="Pokemon/Create new pokemon")]
-public class PokemonTemplate : ScriptableObject
+public class PokemonTemplate : ScriptableObject, IPokemon
 {
     //Pokedex Entries
     [SerializeField] int pokemonId;
@@ -35,11 +35,11 @@ public class PokemonTemplate : ScriptableObject
     public Sprite FrontSprite { get => frontSprite; }
     public Sprite BackSprite { get => backSprite; }
     public Sprite InGameSprite { get => inGameSprite; }
-    public int MaxHealthPoint { get => maxHealthPoint; }
-    public int Attack { get => attack; }
-    public int Defence { get => defence; }
-    public int SpecialAttack { get => specialAttack; }
-    public int SpecialDefence { get => specialDefence; }
-    public int Speed { get => speed; }
+    public int MaxHealthPoint { get => maxHealthPoint; set { maxHealthPoint = value; } }
+    public int Attack { get => attack; set { attack = value; } }
+    public int Defence { get => defence; set { defence = value; } }
+    public int SpecialAttack { get => specialAttack; set { specialAttack = value; } }
+    public int SpecialDefence { get => specialDefence; set { specialDefence = value; } }
+    public int Speed { get => speed; set { speed = value; } }
     public List<LearnableMoveset> Moveset { get => moveset; }
 }
