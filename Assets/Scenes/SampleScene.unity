@@ -3516,8 +3516,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215545061}
-  - component: {fileID: 1215545062}
   - component: {fileID: 1215545063}
+  - component: {fileID: 1215545062}
   m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
@@ -3567,7 +3567,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3587,7 +3587,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 90157199}
   m_FillRect: {fileID: 90157198}
   m_HandleRect: {fileID: 0}
@@ -3598,19 +3598,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1215545063}
-        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: SetCurrentHP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1215545063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6619,7 +6607,7 @@ GameObject:
   - component: {fileID: 1790551319}
   m_Layer: 0
   m_Name: OpponentHud
-  m_TagString: Untagged
+  m_TagString: OpponentHud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6714,7 +6702,7 @@ GameObject:
   - component: {fileID: 1825289999}
   m_Layer: 0
   m_Name: PlayerHud
-  m_TagString: Untagged
+  m_TagString: PlayerHud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6820,7 +6808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852153598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.17, y: 0, z: 0}
+  m_LocalPosition: {x: -20, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

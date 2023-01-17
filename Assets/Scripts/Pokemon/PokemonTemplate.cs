@@ -27,7 +27,7 @@ public class PokemonTemplate : ScriptableObject, IPokemon
 
     [SerializeField] List<LearnableMoveset> moveset;
 
-    public string PokemonName { get => pokemonName; }
+    public string PokemonName { get => pokemonName; set { pokemonName = value; } }
     public int PokemonId { get => pokemonId; }
     public string PokemonDescription { get => pokemonDescription; }
     public PokemonTypes TypeOne { get => typeOne; }

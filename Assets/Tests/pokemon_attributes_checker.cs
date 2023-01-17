@@ -65,5 +65,5 @@ public class pokemon_attributes_checker
         Pokemon playerPokemon = new Pokemon(pokemonTemp, 78);
 
         Assert.AreEqual(171, playerPokemon.Speed);
-    }
+    }  
 }

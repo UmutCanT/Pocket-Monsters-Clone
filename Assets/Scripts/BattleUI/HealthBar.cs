@@ -15,21 +15,15 @@ public class HealthBar : MonoBehaviour
         slider = GetComponent<Slider>();
         healthText =  GetComponentInChildren<TextMeshProUGUI>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
         
     }
 
     public void SetInitialHP(int currentHP, int maxHP)
     {
-        slider.value = (float)currentHP/maxHP;
+        Debug.Log("asdgsdg");
         if(healthText!= null )
         {
             healthText.text = string.Format(hpTextTemp, currentHP, maxHP);
