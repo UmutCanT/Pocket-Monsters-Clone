@@ -19,16 +19,13 @@ public class PokemonBattleUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BattleUiInitializer(playerPokemon, opponentPokemon);
+        //BattleUiInitializer(playerPokemon, opponentPokemon);
     }
 
     public void BattleUiInitializer(Pokemon playerPok, Pokemon opponentPok)
     {
-        if (playerPokemon != null)
-        {
-            PlayerSideSetup(playerPok);
-            OpponentSideSetup(opponentPok);
-        }       
+        PlayerSideSetup(playerPok);
+        OpponentSideSetup(opponentPok);
     }
 
     void PlayerSideSetup(Pokemon pokemon)
