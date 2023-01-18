@@ -6,14 +6,12 @@ using TMPro;
 
 public class HealthBar : MonoBehaviour
 {
-    Slider slider;
-    TextMeshProUGUI healthText;
+    [SerializeField]Slider slider;
+    [SerializeField]TextMeshProUGUI healthText;
     readonly string hpTextTemp = "{0}/ {1}";
 
     private void Awake()
-    {
-        slider = GetComponent<Slider>();
-        healthText =  GetComponentInChildren<TextMeshProUGUI>();
+    {                
     }
 
     private void Start()
@@ -23,13 +21,16 @@ public class HealthBar : MonoBehaviour
 
     public void SetInitialHP(int currentHP, int maxHP)
     {
-        Debug.Log("asdgsdg");
+        slider.maxValue = maxHP;
+        slider.value = currentHP;
+
         if(healthText!= null )
         {
             healthText.text = string.Format(hpTextTemp, currentHP, maxHP);
         }
     }
 
+    //later to-do OnHealthChange
     public void SetCurrentHP()
     {
         if (healthText != null)
@@ -37,4 +38,9 @@ public class HealthBar : MonoBehaviour
             healthText.text = string.Format(hpTextTemp, slider.value, slider.maxValue);
         }
     }
+
+    public float CurrentValue() => slider.value;
+    public float MaxHPValue() => slider.maxValue;
+    public string HpText() => healthText.text;
+
 }

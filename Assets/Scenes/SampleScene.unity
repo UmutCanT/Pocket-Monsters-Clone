@@ -3516,8 +3516,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215545061}
-  - component: {fileID: 1215545063}
   - component: {fileID: 1215545062}
+  - component: {fileID: 1215545063}
   m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
@@ -3567,7 +3567,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3594,7 +3594,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3611,6 +3611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 1215545062}
+  healthText: {fileID: 705696101}
 --- !u!1 &1350015038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,7 +3775,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3802,6 +3804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ece14840f3804ebb139a34b6c6489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 1475976819}
+  healthText: {fileID: 0}
 --- !u!1 &1477399749
 GameObject:
   m_ObjectHideFlags: 0
