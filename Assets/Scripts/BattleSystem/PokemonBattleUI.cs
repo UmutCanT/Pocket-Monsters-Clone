@@ -24,8 +24,11 @@ public class PokemonBattleUI : MonoBehaviour
 
     public void BattleUiInitializer(Pokemon playerPok, Pokemon opponentPok)
     {
-        PlayerSideSetup(playerPok);
-        OpponentSideSetup(opponentPok);
+        if (playerPokemon != null)
+        {
+            PlayerSideSetup(playerPok);
+            OpponentSideSetup(opponentPok);
+        }       
     }
 
     void PlayerSideSetup(Pokemon pokemon)
