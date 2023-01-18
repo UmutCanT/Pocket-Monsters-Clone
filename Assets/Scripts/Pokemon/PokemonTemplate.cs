@@ -32,8 +32,8 @@ public class PokemonTemplate : ScriptableObject, IPokemon
     public string PokemonDescription { get => pokemonDescription; }
     public PokemonTypes TypeOne { get => typeOne; }
     public PokemonTypes TypeTwo { get => typeTwo; }
-    public Sprite FrontSprite { get => frontSprite; }
-    public Sprite BackSprite { get => backSprite; }
+    public Sprite FrontSprite { get => frontSprite; set { frontSprite = value; } }
+    public Sprite BackSprite { get => backSprite; set { backSprite = value; } }
     public Sprite InGameSprite { get => inGameSprite; }
     public int MaxHealthPoint { get => maxHealthPoint; set { maxHealthPoint = value; } }
     public int Attack { get => attack; set { attack = value; } }

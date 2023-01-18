@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 public interface IPokemon
 {
@@ -11,4 +12,6 @@ public interface IPokemon
     int SpecialAttack { get; }
     int SpecialDefence { get; }
     int Speed { get; }
+    Sprite FrontSprite { get; }
+    Sprite BackSprite { get; }
 }

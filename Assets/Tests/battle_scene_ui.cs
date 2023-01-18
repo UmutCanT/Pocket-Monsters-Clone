@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 
 public class battle_scene_ui
 {
+    //Player Side
     [Test]
     public void Player_Battle_UI_Info()
     {
@@ -39,6 +40,20 @@ public class battle_scene_ui
     }
 
     [Test]
+    public void Player_Battle_Unit()
+    {
+        var pokemonTemp = Resources.Load("Pokemon/Bulbasaur") as PokemonTemplate;
+        GameObject battleHud = GameObject.FindGameObjectWithTag("PlayerHud");
+        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+
+        Pokemon playerPokemon = new Pokemon(pokemonTemp, 25);
+        battleHud1.UpdatePokemonBattleHud(playerPokemon);
+
+        Assert.AreEqual("1Back", battleHud1.PokemonUnit.SpriteName());
+    }
+
+    //Opponent Side
+    [Test]
     public void Opponent_Battle_UI_Info()
     {
         var pokemonTemp = ScriptableObject.CreateInstance<PokemonTemplate>();
@@ -67,5 +82,18 @@ public class battle_scene_ui
 
         Assert.AreEqual(25, battleHud1.HpBar.CurrentValue());
         Assert.AreEqual(289, battleHud1.HpBar.MaxHPValue());
+    }
+
+    [Test]
+    public void Opponent_Battle_Unit()
+    {
+        var pokemonTemp = Resources.Load("Pokemon/Bulbasaur") as PokemonTemplate;
+        GameObject battleHud = GameObject.FindGameObjectWithTag("OpponentHud");
+        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+
+        Pokemon opponentPokemon = new Pokemon(pokemonTemp, 78);
+        battleHud1.UpdatePokemonBattleHud(opponentPokemon);
+
+        Assert.AreEqual("1Front", battleHud1.PokemonUnit.SpriteName());
     }
 }

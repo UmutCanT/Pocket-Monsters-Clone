@@ -39,6 +39,7 @@ public class HealthBar : MonoBehaviour
         }
     }
 
+    //Test
     public float CurrentValue() => slider.value;
     public float MaxHPValue() => slider.maxValue;
     public string HpText() => healthText.text;

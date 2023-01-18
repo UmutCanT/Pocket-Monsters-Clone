@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 51943248}
   - component: {fileID: 51943250}
   - component: {fileID: 51943249}
+  - component: {fileID: 51943251}
   m_Layer: 0
   m_Name: OpponentUnit
   m_TagString: Untagged
@@ -199,6 +200,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51943247}
   m_CullTransparentMesh: 1
+--- !u!114 &51943251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51943247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5663aef0b5734b489a25cad369b0f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonImage: {fileID: 51943249}
+  isPlayerPokemon: 0
 --- !u!1 &90157197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,6 +6707,7 @@ MonoBehaviour:
   pokemonLevelText: {fileID: 319424937}
   pokemonGenderImage: {fileID: 1350015040}
   hpBar: {fileID: 1475976820}
+  pokemonUnit: {fileID: 51943251}
 --- !u!1 &1825289995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,6 +6804,7 @@ MonoBehaviour:
   pokemonLevelText: {fileID: 91205283}
   pokemonGenderImage: {fileID: 1722703695}
   hpBar: {fileID: 1215545063}
+  pokemonUnit: {fileID: 2012883416}
 --- !u!1 &1852153598
 GameObject:
   m_ObjectHideFlags: 0
@@ -7042,6 +7059,7 @@ GameObject:
   - component: {fileID: 2012883413}
   - component: {fileID: 2012883415}
   - component: {fileID: 2012883414}
+  - component: {fileID: 2012883416}
   m_Layer: 0
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -7107,6 +7125,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012883412}
   m_CullTransparentMesh: 1
+--- !u!114 &2012883416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012883412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5663aef0b5734b489a25cad369b0f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonImage: {fileID: 2012883414}
+  isPlayerPokemon: 1
 --- !u!1 &2033484110
 GameObject:
   m_ObjectHideFlags: 0
