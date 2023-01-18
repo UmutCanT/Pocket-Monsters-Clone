@@ -209,7 +209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 51943247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5663aef0b5734b489a25cad369b0f54, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb949d97538dbc41a11ac15a222241d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonImage: {fileID: 51943249}
@@ -6626,7 +6626,7 @@ GameObject:
   - component: {fileID: 1790551319}
   m_Layer: 0
   m_Name: OpponentHud
-  m_TagString: OpponentHud
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6722,7 +6722,7 @@ GameObject:
   - component: {fileID: 1825289999}
   m_Layer: 0
   m_Name: PlayerHud
-  m_TagString: PlayerHud
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6814,9 +6814,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852153599}
+  - component: {fileID: 1852153600}
   m_Layer: 0
   m_Name: BattleScene
-  m_TagString: Untagged
+  m_TagString: BattleSetup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6838,6 +6839,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1852153600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852153598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4896789ec15ae64b802ee189bc75ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBattleHud: {fileID: 1825289999}
+  opponentBattleHud: {fileID: 1790551319}
+  playerUnitHPBar: {fileID: 1215545063}
+  opponentUnitHPBar: {fileID: 1475976820}
+  playerUnitSprite: {fileID: 2012883416}
+  opponentUnitSprite: {fileID: 51943251}
 --- !u!1 &1969992679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7134,7 +7153,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012883412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5663aef0b5734b489a25cad369b0f54, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb949d97538dbc41a11ac15a222241d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonImage: {fileID: 2012883414}

@@ -10,23 +10,14 @@ public class HealthBar : MonoBehaviour
     [SerializeField]TextMeshProUGUI healthText;
     readonly string hpTextTemp = "{0}/ {1}";
 
-    private void Awake()
-    {                
-    }
-
-    private void Start()
+    public void HealthBarInitializer(Pokemon pokemon)
     {
-        
-    }
-
-    public void SetInitialHP(int currentHP, int maxHP)
-    {
-        slider.maxValue = maxHP;
-        slider.value = currentHP;
+        slider.maxValue = pokemon.MaxHP;
+        slider.value = pokemon.CurrentHP;
 
         if(healthText!= null )
         {
-            healthText.text = string.Format(hpTextTemp, currentHP, maxHP);
+            healthText.text = string.Format(hpTextTemp, pokemon.CurrentHP, pokemon.MaxHP);
         }
     }
 

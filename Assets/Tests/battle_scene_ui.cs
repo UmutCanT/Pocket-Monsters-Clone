@@ -6,94 +6,74 @@ using UnityEngine.TestTools;
 
 public class battle_scene_ui
 {
+    [SetUp]
+    public void Test_Setup()
+    {
+        var playerPokemonTemp = Resources.Load("Pokemon/Charizard") as PokemonTemplate;
+        var opponentPokemonTemp = Resources.Load("Pokemon/Blastoise") as PokemonTemplate;
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
+
+        Pokemon playerPokemon = new Pokemon(playerPokemonTemp, 63);
+        Pokemon opponentPokemon = new Pokemon(opponentPokemonTemp, 71);
+
+        playerPokemon.CurrentHP = 105;
+        opponentPokemon.CurrentHP = 25;
+
+        battleUi.BattleUiInitializer(playerPokemon, opponentPokemon);      
+    }
+
     //Player Side
     [Test]
-    public void Player_Battle_UI_Info()
+    public void Player_Battle_Hud_Info()
     {
-        var pokemonTemp = ScriptableObject.CreateInstance<PokemonTemplate>();
-        GameObject battleHud = GameObject.FindGameObjectWithTag("PlayerHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        pokemonTemp.PokemonName = "Charizard";
-        Pokemon playerPokemon = new Pokemon(pokemonTemp, 78);
-        battleHud1.UpdatePokemonBattleHud(playerPokemon);
-
-        Assert.AreEqual("Charizard", battleHud1.PokemonNameText);
-        Assert.AreEqual("Lv.78", battleHud1.PokemonLevelText);      
+        Assert.AreEqual("Charizard", battleUi.PlayerBattleHud.PokemonNameText);
+        Assert.AreEqual("Lv.63", battleUi.PlayerBattleHud.PokemonLevelText);      
     }
 
     [Test]
     public void Player_Battle_UI_HP() 
     {
-        var pokemonTemp = ScriptableObject.CreateInstance<PokemonTemplate>();
-        GameObject battleHud = GameObject.FindGameObjectWithTag("PlayerHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        pokemonTemp.MaxHealthPoint = 108;
-        Pokemon playerPokemon = new Pokemon(pokemonTemp, 78);
-        playerPokemon.CurrentHP = 105;
-        battleHud1.UpdatePokemonBattleHud(playerPokemon);
-
-        Assert.AreEqual(105, battleHud1.HpBar.CurrentValue());
-        Assert.AreEqual(289, battleHud1.HpBar.MaxHPValue());
-        Assert.AreEqual("105/ 289", battleHud1.HpBar.HpText());
+        Assert.AreEqual(105, battleUi.PlayerUnitHPBar.CurrentValue());
+        Assert.AreEqual(197, battleUi.PlayerUnitHPBar.MaxHPValue());
+        Assert.AreEqual("105/ 197", battleUi.PlayerUnitHPBar.HpText());
     }
 
     [Test]
     public void Player_Battle_Unit()
-    {
-        var pokemonTemp = Resources.Load("Pokemon/Bulbasaur") as PokemonTemplate;
-        GameObject battleHud = GameObject.FindGameObjectWithTag("PlayerHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+    {   
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        Pokemon playerPokemon = new Pokemon(pokemonTemp, 25);
-        battleHud1.UpdatePokemonBattleHud(playerPokemon);
-
-        Assert.AreEqual("1Back", battleHud1.PokemonUnit.SpriteName());
+        Assert.AreEqual("6Back", battleUi.PlayerUnitSprite.SpriteName());
     }
 
     //Opponent Side
     [Test]
-    public void Opponent_Battle_UI_Info()
-    {
-        var pokemonTemp = ScriptableObject.CreateInstance<PokemonTemplate>();
-        GameObject battleHud = GameObject.FindGameObjectWithTag("OpponentHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+    public void Opponent_Battle_Hud_Info()
+    {    
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        pokemonTemp.PokemonName = "Blastoise";
-        Pokemon opponentPokemon = new Pokemon(pokemonTemp, 78);
-        battleHud1.UpdatePokemonBattleHud(opponentPokemon);
-
-        Assert.AreEqual("Blastoise", battleHud1.PokemonNameText);
-        Assert.AreEqual("Lv.78", battleHud1.PokemonLevelText);
+        Assert.AreEqual("Blastoise", battleUi.OpponentBattleHud.PokemonNameText);
+        Assert.AreEqual("Lv.71", battleUi.OpponentBattleHud.PokemonLevelText);
     }
 
     [Test]
     public void Opponent_Battle_UI_HP()
     {
-        var pokemonTemp = ScriptableObject.CreateInstance<PokemonTemplate>();
-        GameObject battleHud = GameObject.FindGameObjectWithTag("OpponentHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        pokemonTemp.MaxHealthPoint = 108;
-        Pokemon opponentPokemon = new Pokemon(pokemonTemp, 78);
-        opponentPokemon.CurrentHP = 25;
-        battleHud1.UpdatePokemonBattleHud(opponentPokemon);
-
-        Assert.AreEqual(25, battleHud1.HpBar.CurrentValue());
-        Assert.AreEqual(289, battleHud1.HpBar.MaxHPValue());
+        Assert.AreEqual(25, battleUi.OpponentUnitHPBar.CurrentValue());
+        Assert.AreEqual(223, battleUi.OpponentUnitHPBar.MaxHPValue());
     }
 
     [Test]
     public void Opponent_Battle_Unit()
     {
-        var pokemonTemp = Resources.Load("Pokemon/Bulbasaur") as PokemonTemplate;
-        GameObject battleHud = GameObject.FindGameObjectWithTag("OpponentHud");
-        PokemonBattleHud battleHud1 = battleHud.GetComponent<PokemonBattleHud>();
+        PokemonBattleUI battleUi = GameObject.FindGameObjectWithTag("BattleSetup").GetComponent<PokemonBattleUI>();
 
-        Pokemon opponentPokemon = new Pokemon(pokemonTemp, 78);
-        battleHud1.UpdatePokemonBattleHud(opponentPokemon);
-
-        Assert.AreEqual("1Front", battleHud1.PokemonUnit.SpriteName());
+        Assert.AreEqual("9Front", battleUi.OpponentUnitSprite.SpriteName());
     }
 }

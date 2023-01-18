@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayerHud
-  - OpponentHud
+  - BattleSetup
   layers:
   - Default
   - TransparentFX
