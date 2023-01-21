@@ -8,11 +8,6 @@ public class BattleDialogManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogText;
     int typingSpeed = 20;
 
-    private void Start()
-    {
-        StartCoroutine(TypeAnimatedDialog("Choose what to do?"));
-    }
-
     public void SetDialogText(string text)
     {
         dialogText.text = text;
