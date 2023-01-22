@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PokemonBattleUI : MonoBehaviour
 {
-    Pokemon playerPokemon;
-    Pokemon opponentPokemon;
-
     [SerializeField] PokemonBattleHud playerBattleHud;
     [SerializeField] PokemonBattleHud opponentBattleHud;
 
@@ -15,12 +12,6 @@ public class PokemonBattleUI : MonoBehaviour
 
     [SerializeField] BattleUnitUI playerUnitSprite;
     [SerializeField] BattleUnitUI opponentUnitSprite;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //BattleUiInitializer(playerPokemon, opponentPokemon);
-    }
 
     public void BattleUiInitializer(Pokemon playerPok, Pokemon opponentPok)
     {
@@ -42,6 +33,7 @@ public class PokemonBattleUI : MonoBehaviour
         opponentUnitHPBar.HealthBarInitializer(pokemon);
     }
 
+    #region Tests;
     //TESTS
     public PokemonBattleHud PlayerBattleHud { get => playerBattleHud; }
     public PokemonBattleHud OpponentBattleHud { get => opponentBattleHud; }
@@ -49,4 +41,6 @@ public class PokemonBattleUI : MonoBehaviour
     public HealthBar OpponentUnitHPBar { get => opponentUnitHPBar; }
     public BattleUnitUI PlayerUnitSprite { get => playerUnitSprite; }
     public BattleUnitUI OpponentUnitSprite { get => opponentUnitSprite; }
+
+    #endregion
 }

@@ -1,27 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BattleStateManager : MonoBehaviour
 {
-    BattleStates battleState;
+    BattleState battleState;
     [SerializeField] PokemonBattleUI pokemonBattleUI;
     [SerializeField] PokemonCommandUI pokemonCommandUI;
+    [SerializeField] Contanders contanders;
+
+    public PokemonBattleUI PokemonBattleUI { get => pokemonBattleUI; }
+    public PokemonCommandUI PokemonCommandUI { get => pokemonCommandUI; }
 
     // Start is called before the first frame update
     void Start()
     {
-        battleState = BattleStates.Start;
+        SetBattleState(new StartOfBattle(this, contanders));
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMoveSelect()
     {
-        
+        StartCoroutine(battleState.UsingMove());
+    }
+    
+    public void OnItemUse()
+    {
+        StartCoroutine(battleState.UsingItem());
+    }
+    
+    public void OnPokemonSwitch()
+    {
+        StartCoroutine(battleState.SwitchingPokemon());
+    }
+    
+    public void OnRunAway()
+    {
+        StartCoroutine(battleState.RunningAway());
     }
 
-    void StartofBattle()
+    public void SetBattleState(BattleState battleState)
     {
-        pokemonCommandUI.ShowBattleDialogs(true);
+        this.battleState = battleState;
+        StartCoroutine(this.battleState.Start());
     }
 }

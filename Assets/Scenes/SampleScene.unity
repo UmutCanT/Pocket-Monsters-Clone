@@ -2630,7 +2630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionsUI: {fileID: 1592109758}
   movesUI: {fileID: 1313100344}
-  battleDialogs: {fileID: 351248198}
+  battleDialogs: {fileID: 351248200}
 --- !u!1 &555952298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,7 +3563,7 @@ GameObject:
   - component: {fileID: 973149712}
   m_Layer: 0
   m_Name: BattlePanel
-  m_TagString: Untagged
+  m_TagString: BattleSetup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4391,6 +4391,50 @@ MonoBehaviour:
   m_Spacing: {x: 200, y: 25}
   m_Constraint: 2
   m_ConstraintCount: 2
+--- !u!1 &1186774804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186774805}
+  - component: {fileID: 1186774806}
+  m_Layer: 0
+  m_Name: Contanders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1186774805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186774804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852153599}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186774806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186774804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4230b28d21f054589a3308ea385f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197845066
 GameObject:
   m_ObjectHideFlags: 0
@@ -8540,7 +8584,7 @@ GameObject:
   - component: {fileID: 1852153600}
   m_Layer: 0
   m_Name: BattleScene
-  m_TagString: BattleSetup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8559,6 +8603,7 @@ Transform:
   m_Children:
   - {fileID: 1978035194}
   - {fileID: 2142409502}
+  - {fileID: 1186774805}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8576,6 +8621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonBattleUI: {fileID: 973149712}
   pokemonCommandUI: {fileID: 555829828}
+  contanders: {fileID: 1186774806}
 --- !u!1 &1927037423
 GameObject:
   m_ObjectHideFlags: 0
@@ -8734,8 +8780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1738.06, y: 271.48}
+  m_AnchoredPosition: {x: 80.99109, y: 0}
+  m_SizeDelta: {x: 1576.08, y: 271.48}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1969992681
 MonoBehaviour:
@@ -8751,7 +8797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8791,7 +8837,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

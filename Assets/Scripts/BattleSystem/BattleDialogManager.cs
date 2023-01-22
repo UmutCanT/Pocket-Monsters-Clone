@@ -6,7 +6,7 @@ using TMPro;
 public class BattleDialogManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogText;
-    int typingSpeed = 20;
+    int typingSpeed = 30;
 
     public void SetDialogText(string text)
     {

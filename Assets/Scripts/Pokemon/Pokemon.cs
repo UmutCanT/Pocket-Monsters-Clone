@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pokemon 
 {
+    public string PokemonName { get; set; }
     public IPokemon PokemonTemplate { get; private set; }
     public int CurrentLevel { get; private set; }
     public int CurrentHP { get; set; }
@@ -21,6 +22,7 @@ public class Pokemon
     {
         PokemonTemplate = pokemonTemplate;
         CurrentLevel = level;
+        PokemonName = pokemonTemplate.PokemonName;
         CurrentHP = MaxHP;
 
         //Generating Moves

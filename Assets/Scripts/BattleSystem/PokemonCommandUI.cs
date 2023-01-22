@@ -32,4 +32,9 @@ public class PokemonCommandUI : MonoBehaviour
     {
         battleDialogs.gameObject.SetActive(state);
     }
+
+    public void SetDialog(string text)
+    {
+        StartCoroutine(battleDialogs.TypeAnimatedDialog(text));
+    }
 }
