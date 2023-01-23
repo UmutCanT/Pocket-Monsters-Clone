@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleMovesManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] List<Button> moveButtons;
+    [SerializeField] Sprite[] sprite;
+
+    void AssignMoves(List<Move> moves)
     {
-        
+        for (int i = 0; i < moveButtons.Count; i++)
+        {
+            if (i < moves.Count)
+            {
+
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void ButtonSprites(Button button, Move move)
     {
-        
+        //button.image.sprite = move.;
+    }
+
+    public void Test()
+    {
+        for (int i = 0; i < moveButtons.Count; i++)
+        {
+            moveButtons[i].image.sprite = sprite[i];
+        }
     }
 }

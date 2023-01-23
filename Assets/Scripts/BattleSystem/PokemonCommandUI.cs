@@ -5,7 +5,7 @@ using UnityEngine;
 public class PokemonCommandUI : MonoBehaviour
 {
     [SerializeField] GameObject actionsUI;
-    [SerializeField] GameObject movesUI;
+    [SerializeField] BattleMovesManager movesUI;
     [SerializeField] BattleDialogManager battleDialogs;
 
     // Start is called before the first frame update
@@ -26,7 +26,8 @@ public class PokemonCommandUI : MonoBehaviour
     } 
     public void ShowMovesUI(bool state)
     {
-        movesUI.SetActive(state);
+        movesUI.gameObject.SetActive(state);
+        movesUI.Test();
     } 
     public void ShowBattleDialogs(bool state)
     {

@@ -285,9 +285,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1584312671, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 1584312671, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_SelectedSprite: {fileID: 1584312671, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_DisabledSprite: {fileID: 1216842014, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -765,7 +765,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 178042644}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 555829828}
+        m_TargetAssemblyTypeName: PokemonCommandUI, BattleUI
+        m_MethodName: ShowActionsUI
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 555829828}
+        m_TargetAssemblyTypeName: PokemonCommandUI, BattleUI
+        m_MethodName: ShowMovesUI
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 555829828}
+        m_TargetAssemblyTypeName: PokemonCommandUI, BattleUI
+        m_MethodName: ShowBattleDialogs
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1698412847}
+        m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
+        m_MethodName: set_firstSelectedGameObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1306460418}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &178042644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,9 +1554,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1481369382, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 1481369382, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_SelectedSprite: {fileID: 1481369382, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_DisabledSprite: {fileID: 939484051, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2629,7 +2677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionsUI: {fileID: 1592109758}
-  movesUI: {fileID: 1313100344}
+  movesUI: {fileID: 1313100346}
   battleDialogs: {fileID: 351248200}
 --- !u!1 &555952298
 GameObject:
@@ -2953,7 +3001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4718,7 +4766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4744,7 +4792,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 90157199}
   m_FillRect: {fileID: 90157198}
   m_HandleRect: {fileID: 0}
@@ -4841,9 +4889,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1129241360, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 1129241360, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_SelectedSprite: {fileID: 1129241360, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_DisabledSprite: {fileID: -1854282906, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -4943,6 +4991,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee299c991ba2e4418420fea1b46cdef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveButtons:
+  - {fileID: 1306460420}
+  - {fileID: 380322861}
+  - {fileID: 1927037425}
+  - {fileID: 56693846}
+  sprite:
+  - {fileID: -1854282906, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
 --- !u!1 &1350015038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,7 +5050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5072,7 +5127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -8078,7 +8133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 178042641}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1698412848
@@ -8224,7 +8279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8303,7 +8358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8533,7 +8588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8693,9 +8748,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1704396263, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 1704396263, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_SelectedSprite: {fileID: 1704396263, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
+    m_DisabledSprite: {fileID: -922263591, guid: 3923f1ca7f8d4fc4789d08b11bd4aa59, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -9174,7 +9229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
